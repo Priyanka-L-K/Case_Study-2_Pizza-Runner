@@ -74,7 +74,7 @@ Before analysis, several data quality issues were identified and addressed:
 
 This comprehensive case study covers **5 major areas** with multiple questions each:
 
-### 🍕 A. Pizza Metrics (10 Questions)
+### [🍕 A. Pizza Metrics](https://github.com/Priyanka-L-K/Case-Study-3-Foodie-Fi/blob/main/A.%20Customer%20Journey.md)  
 Analyzing order volumes, pizza types, and customer behavior patterns.
 
 **Key Questions:**
@@ -83,7 +83,7 @@ Analyzing order volumes, pizza types, and customer behavior patterns.
 - What was the maximum number of pizzas delivered in a single order?
 - Pizza volume analysis by hour and day of week
 
-### 🏃‍♂️ B. Runner and Customer Experience (7 Questions)
+### [🏃‍♂️ B. Runner and Customer Experience](https://github.com/Priyanka-L-K/Case-Study-3-Foodie-Fi/blob/main/A.%20Customer%20Journey.md)  
 Evaluating delivery performance and runner efficiency.
 
 **Key Questions:**
@@ -92,7 +92,7 @@ Evaluating delivery performance and runner efficiency.
 - Relationship between order size and preparation time
 - Runner speed analysis and delivery success rates
 
-### 🧄 C. Ingredient Optimisation (6 Questions)
+### [🧄 C. Ingredient Optimisation](https://github.com/Priyanka-L-K/Case-Study-3-Foodie-Fi/blob/main/A.%20Customer%20Journey.md)  
 Deep dive into pizza customization and ingredient usage.
 
 **Key Questions:**
@@ -100,7 +100,7 @@ Deep dive into pizza customization and ingredient usage.
 - Custom order formatting and ingredient lists
 - Total ingredient usage across all delivered pizzas
 
-### 💰 D. Pricing and Ratings (5 Questions)
+### [💰 D. Pricing and Ratings](https://github.com/Priyanka-L-K/Case-Study-3-Foodie-Fi/blob/main/A.%20Customer%20Journey.md)  
 Revenue analysis and customer satisfaction metrics.
 
 **Key Questions:**
@@ -108,7 +108,7 @@ Revenue analysis and customer satisfaction metrics.
 - Design and implementation of a ratings system
 - Profitability analysis including runner compensation
 
-### 🚀 E. Bonus DML Challenges (1 Question)
+### [🚀 E. Bonus DML Challenges](https://github.com/Priyanka-L-K/Case-Study-3-Foodie-Fi/blob/main/A.%20Customer%20Journey.md)  
 Database design considerations for business expansion.
 
 **Focus:**

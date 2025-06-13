@@ -1,5 +1,9 @@
 # 🍕 Pizza Runner - SQL Case Study
 
+<p align="center">
+  <img src="https://8weeksqlchallenge.com/images/case-study-designs/2.png" alt="Foodie-Fi" width="480" />
+</p>
+
 ## 📋 Table of Contents
 - [Introduction](#introduction)
 - [Business Problem](#business-problem)
@@ -46,9 +50,9 @@ The analysis uses 6 main tables within the `pizza_runner` database schema:
 
 ## 🔗 Entity Relationship Diagram
 
-```
-![Pizza Runner ERD](https://raw.githubusercontent.com/Priyanka-L-K/Case_Study-2_Pizza-Runner/main/image.png)
-```
+<p align="center">
+  <img src="https://github.com/Priyanka-L-K/Case_Study-2_Pizza-Runner/blob/main/image.png" alt="Entity Relationship Diagram" width="480" />
+</p>
 
 ## 🧹 Data Issues & Cleaning
 

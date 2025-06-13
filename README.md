@@ -47,7 +47,7 @@ The analysis uses 6 main tables within the `pizza_runner` database schema:
 ## 🔗 Entity Relationship Diagram
 
 ```
-(image-url) 
+(https://github.com/Priyanka-L-K/Case_Study-2_Pizza-Runner/blob/main/image.png)
 ```
 
 ## 🧹 Data Issues & Cleaning

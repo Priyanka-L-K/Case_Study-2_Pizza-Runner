@@ -173,3 +173,36 @@ Week 3: 2021-01-22 (Fri) to 2021-01-28 (Thu)
 - Date/time functions are used for temporal analysis in queries 9 and 10
 - Conditional aggregation with CASE statements helps categorize and count different scenarios
 - Week calculation ensures custom week start date (2021-01-01) rather than default calendar weeks
+
+
+
+----------------------
+-- 2 pickuptime-ordertime
+```sql
+SELECT ro.runner_id, AVG(EXTRACT(EPOCH FROM (ro.pickup_time::TIMESTAMP - co.order_time))/60) AS avg_pickup_time_minutes
+FROM runner_orders AS ro
+INNER JOIN customer_orders AS co ON ro.order_id = co.order_id
+WHERE ro.pickup_time IS NOT NULL
+    AND ro.pickup_time != ''  -- Exclude empty strings
+    AND ro.pickup_time != 'null'  -- Exclude string 'null'
+GROUP BY ro.runner_id
+ORDER BY avg_pickup_time_minutes ASC;
+```
+
+-- 3
+```sql
+with order_metrics as 
+(select ro.order_id, count(co.pizza_id) as pizza_count, extract(epoch from (ro.pickup_time::timestamp - co.order_time))/60 as prep_time_minutes
+from customer_orders as co
+inner join runner_orders as ro
+on co.order_id = ro.order_id
+where ro.pickup_time is not null and ro.pickup_time != ' ' and ro.pickup_time != 'null'
+group by ro.order_id, ro.pickup_time, co.order_time
+order by ro.order_id asc)
+
+select pizza_count, max(prep_time_minutes) as maximum_prep_time, min(prep_time_minutes) as minimum_prep_time, avg(prep_time_minutes) as average_prep_time, stddev(prep_time_minutes) as standard_deviation_prep_time
+from order_metrics
+```
+group by pizza_count
+order by pizza_count asc
+
